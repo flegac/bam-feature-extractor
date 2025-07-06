@@ -1,0 +1,17 @@
+[project]
+name = "bam-feature-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "flo", email = "florent.legac@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "easy-kit>=0.1.24",
+    "pysam>=0.23.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

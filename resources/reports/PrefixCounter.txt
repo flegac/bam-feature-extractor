@@ -1,0 +1,13 @@
+
+    For each sequence (read), extract a prefix of length N.
+    Return a list of (prefix, count) where count is the number of sequence starting with 'prefix'.
+    
+    Example:
+    TTAC: 189
+    ATTG: 155
+    TTGT: 105
+    AAGT: 96
+    TAGT: 77
+    AGTG: 66
+    
+    
