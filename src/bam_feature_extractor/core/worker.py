@@ -17,9 +17,8 @@ class Worker(ABC):
         ...
 
     def execute(self, input_file: Path, output_dir: Path):
-        output_dir = output_dir / self.__class__.__name__
         with sam(path=input_file) as data:
-            report = Report(input_file)
+            report = Report(feature=self.__class__.__name__, input_file=input_file)
             with timing(f'{self.__class__.__name__}.execute'):
                 self.build_report(data, report)
         report.save_at(output_dir)

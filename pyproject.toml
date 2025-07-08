@@ -9,7 +9,9 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "easy-kit>=0.1.24",
+    "numpy>=2.3.1",
     "pysam>=0.23.3",
+    "tqdm>=4.67.1",
 ]
 
 [build-system]
